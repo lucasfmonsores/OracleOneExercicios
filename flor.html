@@ -21,7 +21,12 @@
     dibujarCirculo(x-20, y, 10, "orange");
     dibujarCirculo(x+20, y, 10, "black");
   }
- dibujarFlor(300,200);
- dibujarFlor(400,300)
-
+ function flor1() {
+     dibujarFlor(300,200);
+ }
+function flor2() {
+    dibujarFlor((Math.random() * 100 + 50), Math.random() * 100 + 50) 
+}
+pantalla.onmouseover = flor1;
+pantalla.onclick = flor2;
 </script>
